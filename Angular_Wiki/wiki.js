@@ -12,7 +12,7 @@ var pages = {
 
 app.controller('PageViewController', function($scope, $stateParams) {
   var nombreDePagina = $stateParams.page_name;
-  $scope.pageName = pages[nombreDePagina];
+  $scope.pageContent = pages[nombreDePagina];
 });
 
 app.controller('PageEditController', function($scope, $stateParams) {
