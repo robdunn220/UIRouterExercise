@@ -20,7 +20,7 @@ app.controller('PageEditController', function($scope, $stateParams) {
   $scope.pageEdit = pages[name];
 
   $scope.saveEdit = function(newContent) {
-    pages[name].content = $scope.editContent;
+    pages[name].content = newContent;
   };
 });
 
