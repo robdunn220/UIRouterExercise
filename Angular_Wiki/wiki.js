@@ -12,15 +12,15 @@ var pages = {
 
 app.controller('PageViewController', function($scope, $stateParams) {
   var nombreDePagina = $stateParams.page_name;
-  $scope.page = pages[nombreDePagina];
+  $scope.pageName = pages[nombreDePagina];
 });
 
 app.controller('PageEditController', function($scope, $stateParams) {
-  var pageName = $stateParams.page_name;
-  $scope.pageEdit = pages[pageName];
+  var name = $stateParams.page_name;
+  $scope.pageEdit = pages[name];
 
   $scope.saveEdit = function(newContent) {
-    pages[pageName].content = newContent;
+    pages[name].content = $scope.editContent;
   };
 });
 
