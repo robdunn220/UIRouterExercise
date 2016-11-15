@@ -1,2 +1,3 @@
-<h2>{{pageContent.name}}</h2>
-<p>{{pageContent.description}}</p>
+<h2>{{pageName.title}}</h2>
+<p>{{pageName.content}}</p>
+<a ui-sref="page_edit({page_name: '{{page.title}}'})" ui-sref-active="active"><button type="button" name="edit">Edit</button></a>

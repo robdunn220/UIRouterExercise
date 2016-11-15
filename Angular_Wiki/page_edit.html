@@ -1,0 +1,5 @@
+<h2>Edit {{pageEdit.title}}</h2>
+<input type="text" ng-model="editContent" placeholder="{{pageEdit.content}}">
+<a ui-sref="page_view({page_name: '{{pageEdit.title}}'}) "ui-sref-active="active">
+<button type="button" name="button" ng-click="saveEdit(editContent) ">Save</button>
+</a>

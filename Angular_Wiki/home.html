@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <script src="angular.js"></script>
     <script src="angular-ui-router.js"></script>
-    <script src="wikis.js"></script>
+    <script src="wiki.js"></script>
     <title>Wiki</title>
   </head>
   <body ng-app="wikis">
     <nav>
-      <a ui-sref="page_view({page_name: 'che'})" ui-sref-active="active">Stuff</a>
+      <a ui-sref="page_view({page_name: 'Python'})" ui-sref-active="active">Python</a>
+      <a ui-sref="page_view({page_name: 'HTML'})" ui-sref-active="active">HTML</a>
     </nav>
   </body>
   <ui-view></ui-view>
